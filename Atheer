@@ -1,0 +1,83 @@
+package com.package1;
+import java.util.*;
+
+public class Demo {
+    public static void main(String[] args) {
+        Scanner n3 = new Scanner (System.in);
+        int n1=2,n2=9,n ;
+
+        String name="Atheer";
+        MultipleOf();
+        Vowels(name);
+        Max(n1,n2);
+        System.out.println("Enter your grade");
+        n = n3.nextInt();
+        System.out.println( Rounding (n));}
+        
+    //Q1
+    public static int Rounding(int n){
+        int grade = n;
+        if (grade >= 88)
+            grade = 90;
+        else if (grade == 87)
+            grade = grade;
+
+        else if (grade == 63)
+            grade = 65;
+        else if (grade <= 62)
+            grade = grade;
+
+        return grade;
+
+
+
+    }
+ //Q2
+    public static void MultipleOf(){
+        for (int i=1; i<= 100; i++){
+            if (i % 3 == 0 || i % 5 == 0){
+            if (i % 3 == 0){
+                System.out.print("Fizz" + " "); }
+
+            if (i % 5 == 0) {
+                    System.out.println("Buzz" + " "); }
+
+
+            if (i % 3 == 0 && i % 5 == 0) {
+                    System.out.println("FizzBuzz" + " ");}
+
+            }
+        else
+                System.out.println(i);}
+
+
+
+        }
+ //Q3
+     public static void Vowels(String n){
+        String name=n;
+        String[] parts = name.split("");
+          int cont=0;
+        for (int i=0;i<parts.length;i++){
+
+            if(parts[i].equalsIgnoreCase("o")|| parts[i].equalsIgnoreCase("a")|| parts[i].equalsIgnoreCase("i") ||parts[i].equalsIgnoreCase("u") || parts[i].equalsIgnoreCase("e")){
+
+            cont++;}
+        }
+            System.out.println();
+
+            System.out.println("vowels in this name is " + cont);
+        }
+
+ //Q3
+    public static void Max(int n1, int n2){
+   if(n1>n2)
+            System.out.println("MAX= "+n1);
+            else
+            System.out.println("MAX= "+n2);
+
+    }
+
+
+}
+
