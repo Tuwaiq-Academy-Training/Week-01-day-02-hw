@@ -1,0 +1,64 @@
+        //الواجب الاول
+        int grade = 84;
+
+        int check = grade % 10;
+
+        switch (check){
+            case 8:{
+                grade= grade+2;
+                break;
+            }
+            case 9:
+                grade = grade+1;
+                break;
+            case 4:
+                grade = grade+1;
+                break;
+            case 3:
+                grade = grade+2;
+                break;
+            default:
+                grade = grade;
+        }
+        System.out.println(grade);
+
+        //الواجب الثاني
+        for(int i = 1 ; i <= 100; i++){
+            if( (i %3 == 0)&&(i % 5 == 0) )
+                System.out.println("FizzBuzz");
+            else if(i %3 == 0) {
+                System.out.println("Fizz");
+
+            }
+            else if(i % 5 == 0)
+                System.out.println("Buzz");
+
+            else System.out.println(i);
+        }
+
+        //الواجب الثالث
+        //Vowels
+        System.out.println(vowelsCount("Ahmed"));
+        //Max
+        System.out.println(max(45,9));
+
+
+
+    }
+    public static int vowelsCount (String name){
+        //a,e,i,o,u,y
+        int vowels = 0;
+        name.toLowerCase();
+        for(int i = 0; i <=name.length()-1 ; i++){
+            if(name.toLowerCase().charAt(i) == 'a' ||name.toLowerCase().charAt(i) ==  'e' ||name.toLowerCase().charAt(i) ==  'i' || name.toLowerCase().charAt(i) == 'o' || name.toLowerCase().charAt(i) == 'u' ||name.toLowerCase().charAt(i) == 'y')
+                vowels++;
+        }
+
+
+        return vowels;
+    }
+    public static int max (int num1, int num2){
+        if(num1 > num2)
+            return num1;
+            else return num2;
+    }
