@@ -1,0 +1,124 @@
+Q1:
+Rounding of Grades .. if user grades is 88 or more round it to 90 if the grade is 87 keep it .. if user grade 63 round it to 65 if 62 keep it .. so it’s on factorial of 5 where 3 grades or more round .. 2 or less keep the grade
+A1:
+public class HW1 {
+    static int roundup(int grade){
+        int newgrade=grade;
+        if((newgrade+1)%5==0||(newgrade+2)%5==0){
+            if(grade+1%5==0){
+                newgrade++;
+            }else{
+                newgrade+=2;
+            }
+        }
+        return newgrade;
+
+    }
+    public static void main(String[] args) {
+        int grade=roundup(88);
+        System.out.println(grade);
+    }
+
+
+}
+
+Q2:
+Write a program that prints the numbers from 1 to 100 such that:
+
+    If the number is a multiple of 3, you need to print "Fizz" instead of that number.
+    If the number is a multiple of 5, you need to print "Buzz" instead of that number.
+    If the number is a multiple of both 3 and 5, you need to print "FizzBuzz" instead of that number.
+
+A2:
+public class HW2 {
+    static void FizzBuzz(int n){
+      for(int i =1;i<=n;i++){
+          System.out.println(i);
+          if(i%3==0){
+
+              System.out.print("Fizz");
+              if(i%5==0){
+
+                  System.out.print("Buzz");
+
+
+              }
+              System.out.println();
+
+          }
+          else if (i%5==0){
+
+              System.out.println("Buzz");
+          }
+      }
+          }
+    public static void main(String[] args) {
+        FizzBuzz(20);
+    }
+}
+
+
+Q3:
+- pass a name to the function that return the count of vowels in that name
+- print the result
+
+A3:
+public class HW3 {
+    static int vowels(String name){
+        int vowels_num=0;
+        String vowels="aeiou";
+        for(int i =0;i<name.length();i++){
+            char current_char=name.charAt(i);
+            for(int j=0;j<vowels.length();j++){
+                if(current_char==vowels.charAt(j)){
+                    vowels_num++;
+                }
+            }
+        }
+
+        return vowels_num;
+    }
+    static int max(int num1,int num2){
+        return num1>num2 ? num1: num2;
+    }
+    public static void main(String[] args) {
+
+        String name="ali alabdrabalrasol";
+
+        System.out.println(vowels(name));
+        System.out.println(max(10,4));
+
+    }
+}
+
+Q4:
+- Define method called max(). This method takes two parameters num1 and num2 and returns the maximum between the two
+
+A4:
+public class HW3 {
+    static int vowels(String name){
+        int vowels_num=0;
+        String vowels="aeiou";
+        for(int i =0;i<name.length();i++){
+            char current_char=name.charAt(i);
+            for(int j=0;j<vowels.length();j++){
+                if(current_char==vowels.charAt(j)){
+                    vowels_num++;
+                }
+            }
+        }
+
+        return vowels_num;
+    }
+    static int max(int num1,int num2){
+        return num1>num2 ? num1: num2;
+    }
+    public static void main(String[] args) {
+
+        String name="ali alabdrabalrasol";
+
+        System.out.println(vowels(name));
+        System.out.println(max(10,4));
+
+    }
+}
