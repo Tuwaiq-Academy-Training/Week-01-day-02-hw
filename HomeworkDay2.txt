@@ -1,0 +1,94 @@
+//Homework Week1 day 2
+//Q1
+package project_java;
+import java.util.Scanner;
+
+public class hq {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the grade:");
+        int grade= scanner.nextInt();
+        if (grade > (grade-3 )&& (grade % 5) >= 3)
+            grade = grade + (5 - (grade % 5));
+        System.out.println(grade);
+    }//end main
+}//end class
+
+//*********
+
+//Q2
+package project_java;
+
+public class hq1 {
+    public static void main(String[] args) {
+
+
+        for (int i = 1; i <= 100; i++) {
+
+            if ((i%3==0)&&(i%5==0)) {
+                System.out.println("FizzBuzz" + " ");
+            }
+
+            else if (i % 3 == 0) {
+                System.out.println("Fizz" + " ");
+            }
+
+            else if (i % 5 == 0) {
+                System.out.println("Buzz" + " ");
+            }
+
+            else {
+                System.out.println(i + " ");
+            }
+        }
+    }//end the main
+}//end the class
+
+//*********
+
+//Q3
+package project_java;
+import java.util.Scanner;
+
+public class hq2 {
+    public static void main(String[] args) {
+
+        String str = "Renad Ayad";
+
+        System.out.println(countVowels(str));
+        //read the number
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the number1:");
+        int num1 = scanner.nextInt();
+
+        System.out.println("Enter the number2:");
+        int num2 = scanner.nextInt();
+        System.out.println(max(num1,num2));
+
+    }//end main
+   public static boolean checkVowel(char ch)
+    {
+        ch = Character.toUpperCase(ch);
+        return (ch=='A' || ch=='E' || ch=='I' ||
+                ch=='O' || ch=='U');
+    }//end checkVowel
+    static int countVowels(String str)
+    {
+        int count = 0;
+        for (int i = 0; i < str.length(); i++)
+            if (checkVowel(str.charAt(i))) // Check for vowel
+                ++count;
+        return count;
+    }
+
+
+    public static int max(int a,int b)
+        {
+
+            // prints the maximum of two numbers
+           int numbers=Math.max(a, b);
+           return numbers;
+        }
+    }//end class
+
