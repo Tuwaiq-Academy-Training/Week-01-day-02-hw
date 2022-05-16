@@ -1,0 +1,89 @@
+1- first Question:
+
+public class homework {
+
+    public static void main(String[] args) {
+        int grade = 67;
+        int newGrade = 0 ;
+        if( grade % 10 >= 8) {
+            switch( grade % 10){
+                case 8:
+                    newGrade = grade + 2;
+                    break;
+                case 9:
+                    newGrade = grade + 1;
+                    break;
+            }
+
+        } else if(grade % 10 >= 3 && grade % 10 < 5){
+            switch( grade % 10){
+                case 3:
+                    newGrade = grade + 2;
+                    break;
+                case 4:
+                    newGrade = grade + 1;
+                    break;
+            }
+        } else {
+            newGrade = grade;
+        }
+
+//        System.out.println(grade % 10);
+        System.out.println(newGrade);
+
+    }
+}
+
+--------------------------------------------------------------------------------------
+2- Second Question:
+
+public class homework2 {
+
+    public static void main(String[] args) {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println(i);
+            if(i % 3 == 0 ) {
+                if(i % 5 ==0) {
+                    System.out.println("FizzBuzz");
+                    continue;
+                }
+                System.out.println("Fizz");
+            }
+            if ( i % 5 == 0) {
+                System.out.println("Buzz");
+            }
+            
+        }
+    }
+}
+
+
+--------------------------------------------------------------------------------------
+3- Third Question:
+
+import java.util.Arrays;
+
+public class homework3 {
+    public static void main(String[] args) {
+        // -Part One:
+        char vowels[] = {'A', 'E', 'I', 'O', 'U', 'Y'};
+        String test = "Salah";
+        int count = 0;
+        char letter = 't';
+        String upCase = test.toUpperCase();
+        for (int i = 0; i < test.length(); i++) {
+            letter = upCase.charAt(i);
+            for (int j = 0; j < vowels.length; j++) {
+                if (letter == vowels[j]) {
+                    count++;
+                }
+            }
+
+        }
+        System.out.println(count);
+
+        // -Part Two: Max Method
+        System.out.println(Math.max(4,35));
+    }
+}
+
