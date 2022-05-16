@@ -1,0 +1,51 @@
+#== Answer 1 ==#
+public class Main {
+    public static void main(String[] args) {
+        double userGrades = 3;
+        int precision = 5;
+
+        if (userGrades == 2 ) {
+            System.out.println(userGrades);
+        } else {
+            userGrades = Math.floor(userGrades * precision + 10)/precision;
+            System.out.println(userGrades);
+        }
+
+    }
+}
+#== Answer 2 ==#
+public class Main {
+    static void multiple(int n){
+        for(int i = 0; i <= n; i++)
+            if(i % 3 == 0 ) {
+                System.out.println("Fizz");
+            } else if (i % 5 == 0) {
+                System.out.println("Buzz");
+            } else {
+                System.out.println("FizzBuzz");
+            }
+    }
+    public static void main(String[] args) {
+        multiple(100);
+    }
+}
+#== Answer 3 ==#
+public class Main {
+    public static void main(String[] args) {
+        double a = 12.123;
+        double b = 12.456;
+        System.out.println(Math.max(a, b));
+    }
+}
+#== Answer 4 ==#
+public class Main {
+    public static void main(String[] args) {
+      String name = "khaledMojahed";
+     for (var i = 0; i < name.length(); i ++) {
+         char ch = name.charAt(i);
+         if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+             System.out.println(ch);
+         }
+      }
+    }
+}
