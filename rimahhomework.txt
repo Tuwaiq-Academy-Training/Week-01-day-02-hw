@@ -1,0 +1,69 @@
+//q1
+package com.example;
+
+public class Rounding {
+    public static void main(String[] args) {
+        int grad = 88;
+        if (grad >(grad % 3 )&& (grad % 5) >= 3) {
+
+        }
+
+    }
+}
+
+//q2
+
+package com.example;
+
+import java.util.stream.IntStream;
+
+public class FizzBuzz {
+    public static void main(String[] args) {
+        IntStream.rangeClosed(1, 100).forEach(i -> {
+            if (i % 3 == 0) {
+                System.out.print("Fizz");
+            }
+            if (i % 5 == 0) {
+                System.out.print("Buzz");
+            } else if (i % 3 != 0) {
+                System.out.print(i);
+            }
+            System.out.println();
+        });
+    }
+}
+
+
+//q3
+package com.example;
+
+public class vowels {
+    public static void main(String[] args) {
+        String str = "Rimah";
+        countVowels(str);
+    }
+    private static void countVowels(String str) {
+        int vowelCount=0;
+        for (int i=0; i<str.length();i++){
+            if (isVowel(str.charAt(i))){
+                ++vowelCount;
+            }
+        }
+        System.out.println("Vowel Count ="+vowelCount);
+    }
+    private static boolean isVowel(char ch) {
+        ch = Character.toUpperCase(ch);
+        return ((ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U'));
+    }
+}
+//---Max
+package com.example;
+
+public class Max {
+    public static void main(String[] args) {
+        int num1 = 1;
+        int num2 = 2;
+        System.out.println(Math.max(num1,num2));
+    }
+}
+
