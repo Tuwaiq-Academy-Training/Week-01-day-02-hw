@@ -18,5 +18,5 @@ Write a program that prints the numbers from 1 to 100 such that:
 3. If the number is a multiple of both 3 and 5, you need to print "FizzBuzz" instead of that number.
  # الواجب الثالث ( Bouns )
 
-Rounding of Grades .. if user grades is 88 or more round it to 90 if the grade is  87 keep it .. if user grade 63 round it to 65 if 62 keep it .. so it’s on factorial of 5 where 3 grades or more round .. 2 or less keep the grade
+Rounding of Grades .. if user grades is 88 or more round it to 90 if the grade is  87 keep it .. if user grade 63 round it to 65 if 62 keep it .. so it’s on ٪ of 5 where 3 grades or more round .. 2 or less keep the grade
 
